@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="59w-WA-SqT">
     <dependencies>
         <deployment version="1792" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -10,11 +10,11 @@
             <objects>
                 <viewController id="EFf-tF-NBr" customClass="Blalajljdad" customModule="SpaceShooter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="K4c-9V-mIo">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" id="ZxY-by-bOD">
-                                <rect key="frame" x="52" y="475" width="213" height="37"/>
+                                <rect key="frame" x="56" y="931" width="653" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </pageControl>
@@ -27,18 +27,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xse-OB-FzU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2349" y="-182"/>
+            <point key="canvasLocation" x="2724" y="-522.81690140845069"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SpaceShooter" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainVC" id="BYZ-38-t0r" customClass="ViewController" customModule="SpaceShooter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" alpha="0.29999999999999999" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="JYS-eL-On1">
-                                <rect key="frame" x="478" y="230" width="70" height="70"/>
+                                <rect key="frame" x="842" y="590" width="150" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
                                 <state key="normal" image="rightButton.png"/>
                                 <connections>
@@ -48,7 +48,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.29999999999999999" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="NDq-2b-WhF">
-                                <rect key="frame" x="20" y="230" width="70" height="70"/>
+                                <rect key="frame" x="36" y="590" width="150" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <state key="normal" image="leftButton.png"/>
                                 <connections>
@@ -57,55 +57,53 @@
                                     <action selector="touchUpLeft:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="XPc-lX-uSM"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="health.png" id="jQa-Nh-5RW">
-                                <rect key="frame" x="31" y="25" width="20" height="20"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="health.png" id="AAh-vI-xOx">
-                                <rect key="frame" x="54" y="25" width="20" height="20"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="health.png" id="zyO-mh-nhj">
-                                <rect key="frame" x="77" y="25" width="20" height="20"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="health.png" id="2Wd-jS-owh">
-                                <rect key="frame" x="99" y="25" width="20" height="20"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="health.png" id="9an-Tf-gJo">
-                                <rect key="frame" x="121" y="25" width="20" height="20"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="35r-m4-Tgj">
-                                <rect key="frame" x="427" y="20" width="35" height="35"/>
+                                <rect key="frame" x="876" y="30" width="55" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="shieldGrey.png"/>
+                                <state key="normal" image="shield1Grey.png"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="FyS-ZB-6pl">
-                                <rect key="frame" x="384" y="20" width="35" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="bombGrey.png"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="jD1-wH-RvQ">
-                                <rect key="frame" x="470" y="20" width="35" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="shockGrey.png"/>
-                            </button>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" id="oHb-T1-fsO">
-                                <rect key="frame" x="31" y="53" width="110" height="3"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="healthBar.png" id="9iC-qR-Z5O">
+                                <rect key="frame" x="36" y="27" width="178" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="progressTintColor" red="0.90521874999999996" green="0.12139120740253838" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="trackTintColor" red="1" green="0.96916687387068923" blue="0.18925996475017326" alpha="1" colorSpace="calibratedRGB"/>
-                            </progressView>
+                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="centerShip.png" id="prV-qb-29y" customClass="ShipView" customModule="SpaceShooter" customModuleProvider="target">
-                                <rect key="frame" x="259" y="220" width="50" height="90"/>
+                                <rect key="frame" x="487" y="665" width="50" height="96"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="emptyEne.png" id="MO3-fe-IkZ">
+                                <rect key="frame" x="36" y="73" width="178" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="zGi-yt-cVB">
-                                <rect key="frame" x="510" y="19" width="38" height="38"/>
+                                <rect key="frame" x="937" y="30" width="55" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="doubleGrey.png"/>
+                                <state key="normal" image="double1Grey.png"/>
+                                <connections>
+                                    <action selector="ac_double:" destination="BYZ-38-t0r" eventType="touchUpInside" id="auk-kL-Zvf"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="JAL-si-viA">
+                                <rect key="frame" x="387" y="23" width="237" height="82"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="48"/>
+                                <color key="textColor" red="0.97837499999999999" green="0.22629651267412532" blue="0.46397198721489508" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="jD1-wH-RvQ">
+                                <rect key="frame" x="809" y="25" width="65" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="missile1Grey.png"/>
+                                <connections>
+                                    <action selector="ac_oneHit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ati-4H-5vf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="FyS-ZB-6pl">
+                                <rect key="frame" x="753" y="30" width="55" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="heal1Grey.png"/>
+                                <connections>
+                                    <action selector="ac_heal:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BLA-jl-kgq"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -113,46 +111,127 @@
                     <navigationItem key="navigationItem" id="CDB-AW-fWF"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
-                        <outlet property="Ship" destination="prV-qb-29y" id="2js-Yk-RQf"/>
-                        <outlet property="bomb" destination="FyS-ZB-6pl" id="eLJ-ez-QGw"/>
                         <outlet property="double" destination="zGi-yt-cVB" id="vva-da-B0T"/>
-                        <outlet property="powerBar" destination="oHb-T1-fsO" id="LGB-I6-6RE"/>
+                        <outlet property="energy" destination="MO3-fe-IkZ" id="j4X-Do-bW9"/>
+                        <outlet property="heal" destination="FyS-ZB-6pl" id="K8K-b6-XcW"/>
+                        <outlet property="img_Progress" destination="9iC-qR-Z5O" id="irX-9r-YGU"/>
+                        <outlet property="leftPress" destination="NDq-2b-WhF" id="xVj-7X-eUR"/>
+                        <outlet property="missile" destination="jD1-wH-RvQ" id="GrN-ER-LUq"/>
+                        <outlet property="rightPress" destination="JYS-eL-On1" id="B2B-OZ-Sjn"/>
+                        <outlet property="score" destination="JAL-si-viA" id="QdY-LL-Oia"/>
                         <outlet property="shield" destination="35r-m4-Tgj" id="ase-c3-4E7"/>
-                        <outlet property="shock" destination="jD1-wH-RvQ" id="LLS-JY-taU"/>
+                        <outlet property="ship" destination="prV-qb-29y" id="c1H-Cy-M1T"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1775" y="-205"/>
+            <point key="canvasLocation" x="5575" y="-583"/>
+        </scene>
+        <!--Game Over-->
+        <scene sceneID="T0b-Rp-sPs">
+            <objects>
+                <viewController storyboardIdentifier="end" id="Xwd-c2-S7U" customClass="GameOver" customModule="SpaceShooter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" alpha="0.80000000000000004" contentMode="scaleToFill" id="LHQ-e1-Wb2">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="SOO-sw-fDO">
+                                <rect key="frame" x="724" y="373" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="beAQuitter.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="a2K-Xa-gMT">
+                                <rect key="frame" x="226" y="373" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="tryAgain.png"/>
+                                <connections>
+                                    <action selector="tryAgain:" destination="Xwd-c2-S7U" eventType="touchUpInside" id="dSm-rZ-ewu"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gameTitle.png" id="zl0-Ud-fKn">
+                                <rect key="frame" x="285" y="41" width="455" height="164"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ggg-NZ-MwF">
+                                <rect key="frame" x="491" y="413" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.9691668739" blue="0.18925996480000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You Earned:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="oOC-by-W2L">
+                                <rect key="frame" x="463" y="213" width="98" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <color key="textColor" red="0.025155830399999999" green="0.46468418919999999" blue="0.93752083330000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="oV8-TY-uJY">
+                                <rect key="frame" x="405" y="250" width="215" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="28"/>
+                                <color key="textColor" red="0.025155830399999999" green="0.46468418919999999" blue="0.93752083330000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Be A Quitter?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8zh-jf-Lct">
+                                <rect key="frame" x="719" y="481" width="122" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
+                                <color key="textColor" red="0.93752083333333336" green="0.11487023423307072" blue="0.46791512391154866" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Try Again?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Uiq-RX-nef">
+                                <rect key="frame" x="229" y="481" width="95" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
+                                <color key="textColor" red="0.02515583039526453" green="0.46468418915508181" blue="0.93752083333333336" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Lcr-Pe-E0n"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="scorePrint" destination="oV8-TY-uJY" id="BZ2-zC-eK3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6LD-zA-rBR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7142" y="-523"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="ybb-Lo-IAE">
+        <scene sceneID="7P3-zi-3Vu">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="WOg-TS-QRw" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="59w-WA-SqT" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="QLf-Ig-5S1">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2CV-96-p6o">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Oa1-91-N9p"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="hsW-Hp-oxD"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="X7n-IA-caq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UjE-E5-CaW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1129" y="-293"/>
+            <point key="canvasLocation" x="4041.5999999999999" y="-522.81690140845069"/>
         </scene>
     </scenes>
     <resources>
-        <image name="bombGrey.png" width="50" height="49"/>
+        <image name="beAQuitter.png" width="100" height="100"/>
         <image name="centerShip.png" width="118" height="141"/>
-        <image name="doubleGrey.png" width="50" height="50"/>
-        <image name="health.png" width="30" height="30"/>
+        <image name="double1Grey.png" width="128" height="128"/>
+        <image name="emptyEne.png" width="330" height="54"/>
+        <image name="gameTitle.png" width="609" height="163"/>
+        <image name="heal1Grey.png" width="128" height="128"/>
+        <image name="healthBar.png" width="705" height="128"/>
         <image name="leftButton.png" width="256" height="256"/>
+        <image name="missile1Grey.png" width="128" height="128"/>
         <image name="rightButton.png" width="256" height="256"/>
-        <image name="shieldGrey.png" width="50" height="50"/>
-        <image name="shockGrey.png" width="50" height="50"/>
+        <image name="shield1Grey.png" width="128" height="128"/>
+        <image name="tryAgain.png" width="100" height="100"/>
     </resources>
 </document>

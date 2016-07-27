@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ShipView: UIImageView, UIGestureRecognizerDelegate {
+class ShipView: UIImageView{
     override init(frame: CGRect) {
         super.init(frame: frame)
     
