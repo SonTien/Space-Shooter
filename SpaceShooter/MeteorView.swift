@@ -78,7 +78,7 @@ class MeteorView: UIImageView {
             }
             else if (imgT == 9)
             {
-                meteHP = 1
+                meteHP = 5
             }
             changeImg("mete")
             self.frame = CGRectMake(CGFloat(x), -CGFloat(self.heightMete!), CGFloat(self.widthMete!), CGFloat(self.heightMete!))

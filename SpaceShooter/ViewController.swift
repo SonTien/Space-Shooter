@@ -156,8 +156,8 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     override func viewDidAppear(animated: Bool)
     {
 //background's speed and coordinates
-            Background1 = UIImageView(image: UIImage(named: "sandBack1.png"))
-            Background2 = UIImageView(image: UIImage(named: "sandBack2.png"))
+            Background1 = UIImageView(image: UIImage(named: "star1.jpg"))
+            Background2 = UIImageView(image: UIImage(named: "star2.jpg"))
         Background1.frame = CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height)
         Background2.frame = CGRectMake(0, -Background1.bounds.size.height, self.view.bounds.size.width, self.view.bounds.size.height)
         self.view.addSubview(Background1)
@@ -263,7 +263,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     
     func hitShip(){
         if (gameManager!.progressValue == 10){
-            img_Progress.image = UIImage(named: "healthBar")
+            img_Progress.image = UIImage(named: "healthFull")
         }
         if (gameManager!.progressValue == 8){
             img_Progress.image = UIImage(named: "healthBar1")
@@ -287,19 +287,19 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     {
         if (gameManager?.powerBar == 0)
         {
-            energy.image = UIImage(named: "emptyEne.png")
+            energy.image = UIImage(named: "eneNo.png")
         }
         if (gameManager?.powerBar == 1)
         {
-            energy.image = UIImage(named: "lowEne.png")
+            energy.image = UIImage(named: "eneLow.png")
         }
         if (gameManager?.powerBar == 2)
         {
-            energy.image = UIImage(named: "medEne.png")
+            energy.image = UIImage(named: "eneMed.png")
         }
         if (gameManager?.powerBar == 3)
         {
-            energy.image = UIImage(named: "highEne.png")
+            energy.image = UIImage(named: "eneFull.png")
         }
         
         if (gameManager?.powerBar == 0)
